@@ -51,12 +51,13 @@ contenido.style.color = 'black'
     <title>Document</title>
 </head>
 <body>
+    <p>Escriba el texto y pulse en enviar o enviar con estilo</p>
     <input id="myinput" type="text">
     <h1 id="h1" class="content"></h1>
-    <button id="btn" onclick=changeData()>
+    <button class="button" id="btn" onclick=changeData()>
         Enviar
     </button>
-    <button onclick=changeWithStyle()>
+    <button class="button" onclick=changeWithStyle()>
         Enviar con estilo
     </button>
     
@@ -65,6 +66,8 @@ contenido.style.color = 'black'
         const boton = document.querySelector('.button')
         const input = document.querySelector('.input')
         const content= document.querySelector('.content') //clase
+        boton.style.background ="lightblue";
+        boton.style.borderRadius ="10px";
         const miH1 = document.getElementById('h1');
         const myInput = document.getElementById('myinput');
         //const btn = document.getElementById('btn').addEventListener("click",changeData());
