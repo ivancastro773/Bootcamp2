@@ -57,12 +57,17 @@ f.action = "";
 f.method = "POST"
 let input = document.createElement("input");
 let input2 = document.createElement("input");
+let btnForm = document.createElement("button");
 input.setAttribute('type', 'text');
 input.setAttribute('name', 'name');
 input2.setAttribute('type', 'email');
 input2.setAttribute('name', 'email');
+btnForm.setAttribute('type', 'submit');
+btnForm.innerText='Enviar';
+
 //agrego al form
 f.appendChild(input);
 f.appendChild(input2);
+f.appendChild(btnForm);
 
 
