@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+}
+body{
+    background-color: #dbe3ec;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.reproductive{  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 422px;
+    height: 510px;
+    border: 1px solid black;
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+}
+
+.grey{
+    color: grey;
+}
+.album{
+    position: absolute;
+    width: 310px;
+    height: 310px;
+    background-image: url(./img.jpg);
+    margin-top: 15px;
+    margin-left: -25px;
+    border-radius: 15px;
+    box-shadow: 0px 15px 35px -5px rgb(50 88 130 / 32%)
+}
+.items{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 22px;
+    color: grey;
+}
+.items li{
+    list-style: none;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+.song{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    margin-bottom: 50px;
+}
+.total-time{
+    display: flex;
+    justify-content: flex-end;
+}
+hr{
+    margin: auto;
+    width: 400px;
+    border: 2px solid grey;
+    border-radius: 15px;
+}
+.play{
+    color: white;
+}
+.like{
+    color: red;
+}

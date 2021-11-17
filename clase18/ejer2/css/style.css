@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Antique&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+.main__container{
+    height: 100vh;
+    font-family: 'Shippori Antique', sans-serif;
+}
+.navbar__container{
+    height: 15%;
+    position: relative;
+}
+.navbar__content{
+    position: fixed;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    z-index: 10;
+    background-color: #fff;
+}
+.options{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35%;
+    gap: 30px;
+    border-bottom: 2px solid rgba(0 ,0,0,0.3);
+}
+.options>a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+}
+.options>a:hover{
+    color: red;
+}
+.selected{
+    border-bottom: 2px solid red;
+}
+.content__container{
+    height: 85%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.content__img img{
+    position: absolute;
+    z-index: 1;
+    left: 5%;
+}
+.content__img{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 50%;
+}
+.cuadrado{
+    top: 100%;
+    width: 340px;
+    height: 340px;
+    background-color: #5368df;
+    position: absolute;
+    border-radius: 0 0 100px 0;
+}
+.content__txt{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 30%;
+    height: 40%;
+    font-family: 'Shippori Antique', sans-serif;
+    
+}
+.content__txt>h2{
+   font-weight: bold;
+}
+.content__txt>p{
+    color: rgba(0, 0, 0, 0.5);  
+ }
+ .content__txt>button{
+    height: 30px;
+    width: 80px;
+    background-color: #5368df;
+    border: none;
+    border-radius: .5em;
+    color: #fff;
+ }
+ .content__txt>button:hover{
+
+     background: #fff;
+     border-radius: 5px;
+     border: 1px solid #5368DF;
+     color: #5368DF;
+ }
+
+ /*! parte ivan*/
+ .container__ivan{
+     height: 50vh;
+     font-family: 'Shippori Antique', sans-serif;
+ }
+ .text-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.text-container>p{
+    width:50% ;
+    color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+.container-accordion{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.accordion {
+    background:none;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 50%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+  .line{
+    border-bottom: 1px solid black;
+  }
+  .active {
+    color: black;
+  }
+  .accordion:hover{
+    color: red;
+  }
+  .accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    color: blue;
+    margin-left: 5px;
+  }
+  .active:after {
+    content: "\2212";
+    color: red;
+  }
+  .panel {
+    padding: 0 18px;
+    display: none;
+    width: 50%;
+    background-color: white;
+    overflow: hidden;
+    border-bottom: 1px solid black;
+  }
+
+  /*! parte jano*/
+
+
+.container4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.center {
+    height: 50px;
+    width: 35%;
+    margin: 20px 0 0;
+    padding: 5px 0 0;
+    -webkit-box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.19);
+    box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.19);
+}
+.center ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+.center li {
+    margin: 5px 10px 0;
+}
+.active2 {
+    height: 23px;
+    box-shadow: 0 2px 0 0 #CC6C66;
+}
+.center a {
+    letter-spacing: 0.1em;
+    font-size: 14px;
+    color: #8F9091;
+    ;
+    font-weight: 500;
+    text-decoration: none;
+}
+.contenido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+.text {
+    margin: 0 0 0 50px;
+    font-size: 13px;
+    color: #9A9E9F;
+    text-align: left;
+}
+.text h3 {
+    font-size: 20px;
+    color: #242946;
+}
+.button {
+    height: 30px;
+    width: 80px;
+    font-weight: bold;
+    background-color: #5368DF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+}
+.button:hover {
+    background: #fff;
+    border-radius: 5px;
+    border: 2px solid #5368DF;
+    color: #5368DF;
+}
