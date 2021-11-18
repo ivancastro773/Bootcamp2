@@ -7,8 +7,12 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="https://ivanapibootcamp.herokuapp.com/user/create" method="post">
+    <form action="http://localhost:3000/upload" enctype="multipart/form-data" method="post">
             <ul>
+             <li>
+               <label for="name">Archivo:</label>
+               <input type="file" id="file" name="file">
+             </li>
              <li>
                <label for="name">Nombre:</label>
                <input type="text" id="name" name="name">
