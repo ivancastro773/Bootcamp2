@@ -1,3 +1,7 @@
+@font-face {
+  font-family: Space-xd;
+  src: url(/Fonts/Forum-Regular.ttf);
+}
 * {
   margin: 0;
   padding: 0;
@@ -7,13 +11,12 @@
 
 body {
   min-height: 100vh;
-  background-image: url(./img/background-home-desktop.jpg);
+  background-image: url(../assets/home/background-home-desktop.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   font-family: "Rubik", sans-serif;
 }
-nav {
-  margin-top: 30px;
+nav{
   min-height: 80px;
   display: flex;
   align-items: center;
@@ -21,40 +24,40 @@ nav {
   background: hsl(0, 0% 100%/0.1);
   backdrop-filter: blur(1rem);
 }
-.navActive {
+.navActive{
   padding: 23px;
   border-bottom: 3px solid #fff;
 }
 
-nav hr {
+nav hr{
   width: 30%;
   height: 1px;
   border: 0;
   border-top: 1px solid rgba(255, 255, 255, 0.3);
 }
-nav img {
+nav img{
   margin-left: 100px;
 }
-nav ul {
+nav ul{
   margin-right: 150px;
   display: flex;
 }
-nav ul li {
+nav ul li{
   padding: 0 15px;
 }
-nav ul li a {
+nav ul li a{
   color: #fff;
 }
-nav ul li a b {
-  padding: 0 5px;
+nav ul li a b{
+padding: 0 5px;
+font-weight: bold;
 }
-
 /* NAV END */
 .container-home {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(./img/background-home-desktop.jpg);
+  background-image: url(/assets/home/background-home-desktop.jpg);
   background-position: center;
   background-size: cover;
   height: 100vh;

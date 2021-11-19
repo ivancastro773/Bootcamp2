@@ -1,0 +1,157 @@
+@font-face {
+    font-family: Space-xd;
+    src: url(/Fonts/Forum-Regular.ttf);
+}
+*{
+    box-sizing: border-box;
+    color: #fff;
+    font-family: Space-xd;
+    font-weight: 100;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+html{
+    width: 100vw;
+    height: 100vh;
+
+}
+#background{
+    background-image: url(../assets/destination/background-destination-desktop.jpg);
+    width: inherit;
+    height: inherit;
+}
+body{
+    width: inherit;
+    height: inherit;
+}
+nav{
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: hsl(0, 0% 100%/0.1);
+    backdrop-filter: blur(1rem);
+  }
+  .navActive{
+    padding: 23px;
+    border-bottom: 3px solid #fff;
+  }
+  
+  nav hr{
+    width: 30%;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  nav img{
+    margin-left: 100px;
+  }
+  nav ul{
+    margin-right: 150px;
+    display: flex;
+  }
+  nav ul li{
+    padding: 0 15px;
+  }
+  nav ul li a{
+    color: #fff;
+  }
+  nav ul li a b{
+  padding: 0 5px;
+  font-weight: bold;
+  }
+/*---------------------------------------------------------------------------------*/
+.destination{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+.destination > div:first-child{
+    display: flex;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.destination h2{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.destination h2:first-child{
+    opacity: 0.5;
+    margin-right: 15px;
+}
+.destContainer{
+    width: inherit;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+.destLeft{
+    width: 50%;
+    height: 350px;
+}
+#planetImg{
+    background-image: url(../assets/destination/image-mars.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: inherit;
+    margin-top: 20px;
+}
+.destRight{
+    width: 50%;
+    height: 350px;
+}
+.destRight >{
+    opacity: 0;
+}
+.destRight ul{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-size: 15px;
+    width: 245px;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+}
+.destRight a{
+    padding-bottom: 10px;
+}
+.planetActive{
+    border-bottom: 3px solid #fff;
+}
+.destRight h1{
+    font-size: 80px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin: 10px 0;
+}
+.destRight p{
+    line-height: 25px;
+    width: 378px;
+    padding-bottom: 50px;
+    border-bottom: rgba(255, 255, 255, 0.5) 1px solid;
+}
+#distanceContainer{
+    display: flex;
+    justify-content: space-between;
+    width: 380px;
+    padding-top: 10px;
+}
+#distanceContainer div{
+    width: 160px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+#distanceContainer div > h4{
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    opacity: 0.8;
+}
