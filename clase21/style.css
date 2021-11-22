@@ -106,6 +106,7 @@ nav i{
 }
 .sec-card h1{
     margin-left: 10px;
+    margin-bottom: 15px;
 }
 @media screen and (max-width: 1120px) {
     .home-grid{
