@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <title>MercadoLibre</title>
+</head>
+
+<body>
+    <nav>
+        <div class="imgLogo"></div>
+        <div class="search">
+            <input type="text" placeholder=" Buscar productos,marcas y mas...">
+            <i class="fas fa-search" id="lupa"></i>
+        </div>
+        <i class="fas fa-bars"></i>
+        <i class="fas fa-shopping-cart"></i>
+    </nav>
+    <div class="navB">
+        <i class="fas fa-map-marker-alt"></i>
+        <h6>Enviar a Nahuel 9 de julio 8822</h6>
+    </div>
+    <!-----------------------------carousel---------------------------------->
+
+    <section class="carouselContainer">
+
+
+        <div class="mySlides fade">
+            <img src="./img/Carousel/img1.webp" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="./img/Carousel/img2.webp" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="./img/Carousel/img3.webp" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="./img/Carousel/img4.webp" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="./img/Carousel/img5.webp" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="./img/Carousel/img6.webp" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="./img/Carousel/img7.webp" style="width:100%">
+        </div>
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+        </div>
+        <!-- Next and previous buttons -->
+        <span id="topCarrouselPrev" class="prev" onclick="plusSlides(-1)">&#10094;</span>
+        <span id="topCarrouselNext" class="next" onclick="plusSlides(1)">&#10095;</span>
+        </div>
+
+    </section>
+    <!--------------------------SECTION-Pay-Method------------------------------------->
+    <section class="payMethodContainer">
+        <div class="payMethodButtonsContainer">
+            <div class="payMethod" id="payMethod1">
+                <div class="payImg" id="payImg1"></div>
+                <div>
+                    <h3>Tarjeta de crédito</h3>
+                    <a href="#">Ver promociones bancarias</a>
+                </div>
+            </div>
+            <div class="payMethod" id="payMethod2">
+                <div class="payImg" id="payImg2"></div>
+                <div>
+                    <h3>Tarjeta de débito</h3>
+                    <a href="#">Ver más</a>
+                </div>
+            </div>
+            <div class="payMethod" id="payMethod3">
+                <div class="payImg" id="payImg3"></div>
+                <div>
+                    <h3>Cuotas sin tarjeta</h3>
+                    <a href="#">Conocé Mercado Crédito</a>
+                </div>
+            </div>
+            <div class="payMethod" id="payMethod4">
+                <div class="payImg" id="payImg4"></div>
+                <div>
+                    <h3>Efectivo</h3>
+                    <a href="#">Ver más</a>
+                </div>
+            </div>
+            <img id="viewMoreButton" src="./img/view-more.svg" alt="view-more">
+        </div>
+    </section>
+    <!--------------------------SECTION CARDS PRODUCTS------------------------------------->
+
+
+    <section class="box-products">
+        <div class="text-title-products">
+            <p>Basado en tu ultima vista</p>
+            <p class="blue-hist">Ver historial</p>
+        </div>
+        <div class="cards-products">
+            <div class="card-products">
+                <img src="./img/CardProducts/prueba.webp" alt="">
+                <hr>
+                <p>$300</p>
+            </div>
+            <div class=" card-products">
+                <img src="./img/CardProducts/prueba.webp" alt="">
+                <hr>
+                <p>$300</p>
+            </div>
+            <div class="card-products">
+                <img src="./img/CardProducts/prueba.webp" alt="">
+                <hr>
+                <p>$300</p>
+            </div>
+            <div class="card-products">
+                <img src="./img/CardProducts/prueba.webp" alt="">
+                <hr>
+                <p>$300</p>
+            </div>
+            <div class="card-products">
+                <img src="./img/CardProducts/prueba.webp" alt="">
+                <hr>
+                <p>$300</p>
+            </div>
+        </div>
+        <div class="text-title-products">
+            <p>Relacionado con tus visitas en Libros,Revistas y Comics</p>
+            <p class="blue-hist">Ver historial</p>
+        </div>
+        <div class="cards-products">
+            <div class="card-products">
+                <img src="./img/CardProducts/prueba.webp" alt="">
+                <hr>
+                <p>$300</p>
+            </div>
+            <div class="card-products">
+                <img src="./img/CardProducts/prueba.webp" alt="">
+                <hr>
+                <p>$300</p>
+            </div>
+            <div class="card-products">
+                <img src="./img/CardProducts/prueba.webp" alt="">
+                <hr>
+                <p>$300</p>
+            </div>
+            <div class="card-products">
+                <img src="./img/CardProducts/prueba.webp" alt="">
+                <hr>
+                <p>$300</p>
+            </div>
+            <div class="card-products">
+                <img src="./img/CardProducts/prueba.webp" alt="">
+                <hr>
+                <p>$300</p>
+            </div>
+        </div>
+    </section>
+
+    <!--------------------------Subscribe-Section----------------------------------->
+    <section class="susbscribeSection">
+        <div class="sectionContainer">
+            <div class="sectionTop">
+                <h3>Suscribite al nivel 6</h3>
+                <h3>$449<sub>el primer mes</sub></h3>
+            </div>
+            <div class="sectionBottom">
+                <div class="consegui">
+                    <h6>Consegui los mejores beneficios en Mercado Libre y Mercado Pago</h6>
+                </div>
+                <div class="bottomIcons">
+                    <h6>Diney+ incluido</h6>
+                    <h6>Star+ incluido</h6>
+                    <h6>Envíos gratis y rápidos desde $3.500 y 45%OFF en envíos de menos de $3.500</h6>
+                </div>
+                <div class="sectionBottomF">
+                    <hr>
+                    <h6>Primer mes con precio promocional</h6>
+                    <button id=btnSus>Suscribite</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--------------------------Grid-Section------------------------------------>
+
+    <section class="grid-products">
+        <h3>Categorías populares</h3>
+        <div class="grid-products-container">
+            <div class="navigation">
+                <div class="prev nav-btn"><i class="fas fa-chevron-left"></i></div>
+                <div class="next nav-btn"><i class="fas fa-chevron-right"></i></div>
+            </div>
+
+            <div class="grid-carousel">
+                <div class="item main">
+                    <div class="grid-container">
+                        <div class="grid-item">
+                            <i class="fas fa-apple-alt fa-4x"></i>
+                            <p>Categoría</p>
+                        </div>
+                        <div class="grid-item">
+                            <i class="far fa-futbol fa-4x"></i>
+                            <p>Categoría</p>
+                        </div>
+                        <div class="grid-item">
+                            <i class="fas fa-apple-alt fa-4x"></i>
+                            <p>Categoría</p>
+                        </div>
+                        <div class="grid-item">
+                            <i class="fas fa-apple-alt fa-4x"></i>
+                            <p>Categoría</p>
+                        </div>
+                        <div class="grid-item">
+                            <i class="far fa-futbol fa-4x"></i>
+                            <p>Categoría</p>
+                        </div>
+                        <div class="grid-item">
+                            <i class="fas fa-apple-alt fa-4x"></i>
+                            <p>Categoría</p>
+                        </div>
+                        <div class="grid-item">
+                            <i class="fas fa-apple-alt fa-4x"></i>
+                            <p>Categoría</p>
+                        </div>
+                        <div class="grid-item">
+                            <i class="fas fa-microphone-alt fa-4x"></i>
+                            <p>Categoría</p>
+                        </div>
+                        <div class="grid-item">
+                            <i class="far fa-futbol fa-4x"></i>
+                            <p>Categoría</p>
+                        </div>
+                        <div class="grid-item">
+                            <i class="fas fa-apple-alt fa-4x"></i>
+                            <p>Categoría</p>
+                        </div>
+                        <div class="grid-item">
+                            <i class="fas fa-apple-alt fa-4x"></i>
+                            <p>Categoría</p>
+                        </div>
+                        <div class="grid-item">
+                            <i class="fas fa-microphone-alt fa-4x"></i>
+                            <p>Categoría</p>
+                        </div>
+                        <div class="grid-item">
+                            <i class="fas fa-apple-alt fa-4x"></i>
+                            <p>Categoría</p>
+                        </div>
+                        <div class="grid-item">
+                            <i class="fas fa-microphone-alt fa-4x"></i>
+                            <p>Categoría</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        </div><!-- fin container -->
+
+    </section>
+
+
+    <!--------------------------FORM PAY------------------------------------>
+    <div class="form-pay-container">
+        <div class="cards-pay">
+            <div class="card-pay border-bottom-card">
+                <img src="./img/payment.svg" alt="">
+                <h3>Elegí cómo pagar</h3>
+                <p>Podes pagar con tarjeta,debito,efectivo o hasta 12 cuotas
+                    sin tarjeta con mercado crédito.</p>
+                <p class="blue-pay">cómo pagar tus compras</p>
+            </div>
+            <div class="card-pay border-bottom-card">
+                <img src="./img/shipping.svg" alt="">
+                <h3>Envío gratis desde $3.500</h3>
+                <p>Podes pagar con tarjeta,debito,efectivo o hasta 12 cuotas
+                    sin tarjeta con mercado crédito.</p>
+                <p class="blue-pay">Conoce mas sobre este beneficio</p>
+            </div>
+            <div class="card-pay">
+                <img src="./img/protected.svg" alt="">
+                <h3>Seguridad, de principio a fin</h3>
+                <p>Podes pagar con tarjeta,debito,efectivo o hasta 12 cuotas
+                    sin tarjeta con mercado crédito.</p>
+                <p class="blue-pay">Cómo te protejemos</p>
+            </div>
+        </div>
+        <div class="box-two-pay">
+            <div class="box-pay">
+                <p>Botón de arrepentimiento</p>
+                <p class="blue-pay">Cancelar de compra</p>
+                <p class="blue-pay">Cancelar una suscripción</p>
+            </div>
+            <div class="box-pay">
+                <p>Conoce las normas que aplican cuando comprás</p>
+                <p class="blue-pay">Ver contratos de adhecion - Ley N°24.240 de defensa del consumidor</p>
+
+            </div>
+        </div>
+        <div class="final-pay-logo">
+            <img src="./img/data-fiscal-6dc7613071.png" alt=""> <!-- codigo QR -->
+            <img src="./img/banner_usuarios_financieros.svg" alt=""> <!-- usuarios financieros -->
+        </div>
+
+    </div>
+    <footer>
+        <div class="text-footer">
+            <p>Trabajá con nostros</p>
+            <p>Terminos y condiciones</p>
+            <p>Cómo cuidamos tu privacidad</p>
+            <p>Informacion al usuario financiero</p>
+            <p>Ayuda</p>
+            <p>Defensa del consumidor</p>
+        </div>
+        <p>Copyright 1999-2021 Mercado libre S.R.L</p>
+        <p>Av. Caseros 3039, piso 2, CP: 1264, Parque patricios, CABA.</p>
+
+    </footer>
+</body>
+<script src="main.js"></script>
+
+</html>
