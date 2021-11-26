@@ -1,7 +1,7 @@
 @font-face {
     font-family: Space-xd;
     src: url(/Fonts/Forum-Regular.ttf);
-}
+  }
 *{
     box-sizing: border-box;
     color: #fff;
@@ -17,16 +17,17 @@ html{
     height: 100vh;
 
 }
-#background{
-    background-image: url(../assets/destination/background-destination-desktop.jpg);
-    width: inherit;
-    height: inherit;
-}
 body{
     width: inherit;
     height: inherit;
 }
-nav{
+#background{
+    background-image: url(../assets/destination/background-destination-desktop.jpg);
+    background-size: cover;
+    width: inherit;
+    height: inherit;
+}
+  nav{
     min-height: 80px;
     display: flex;
     align-items: center;
@@ -38,7 +39,6 @@ nav{
     padding: 23px;
     border-bottom: 3px solid #fff;
   }
-  
   nav hr{
     width: 30%;
     height: 1px;
@@ -48,7 +48,7 @@ nav{
   nav img{
     margin-left: 100px;
   }
-  nav ul{
+  #item{
     margin-right: 150px;
     display: flex;
   }
@@ -61,7 +61,11 @@ nav{
   nav ul li a b{
   padding: 0 5px;
   font-weight: bold;
-  }
+  } 
+.toggle {
+    display: none;
+}
+
 /*---------------------------------------------------------------------------------*/
 .destination{
     display: flex;
@@ -104,6 +108,7 @@ nav{
 .destRight{
     width: 50%;
     height: 350px;
+    padding-left: 200px;
 }
 .destRight >{
     opacity: 0;
@@ -154,4 +159,35 @@ nav{
     text-transform: uppercase;
     letter-spacing: 2px;
     opacity: 0.8;
+}
+
+@media screen and (max-width: 480px) {
+    #background{
+        height: 1100px;
+    }
+    hr{
+      display: none;
+    }
+    #nav{
+      display: flex;
+      justify-content: space-between;
+    }
+    #item{
+      display: none;
+      flex-direction: column;
+    }
+    .toggle {
+      display: block;
+    } 
+    .destContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .destRight{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
 }

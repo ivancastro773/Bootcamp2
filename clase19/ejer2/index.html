@@ -1,22 +1,28 @@
-<!DOCTYPE html>
+q<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="css/style(Ivan).css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    <nav>
+    <nav id="nav">
         <img src="./assets/shared/logo.svg" alt="logo">
         <hr>
-        <ul>
-          <li><a class="navActive" href=""><b>00</b> HOME</a></li>
-          <li><a href="./destination-mars.html"><b>01</b> DESTINATION</a></li>
-          <li><a href="./crew-engineer.html"><b>02</b> CREW</a></li>
-          <li><a href="./technology-spaceport.html"><b>03</b> TECHNOLOGY</a></li>
-        </ul>
+            <ul id="item">
+                <li><a class="navActive" href="#"><b>00</b> HOME</a></li>
+                <li><a href="./destination-mars.html"><b>01</b> DESTINATION</a></li>
+                <li><a href="./crew-engineer.html"><b>02</b> CREW</a></li>
+                <li><a href="./technology-spaceport.html"><b>03</b> TECHNOLOGY</a></li>
+            </ul>
+            <ul>
+                <li class="toggle">
+                    <a href="#" onclick="changeIcon()"><i id="tg" class="fas fa-bars "></i></a>
+                </li>
+            </ul>
       </nav>
     <div class="container-home">
         <div class="text-home">
@@ -34,4 +40,5 @@
     </div>
     
 </body>
+<script src="js/main.js"></script>
 </html>

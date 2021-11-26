@@ -4,35 +4,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  <link rel="stylesheet" href="./css/style(Nahu).css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style(Nahu).css">
   <title>Frontend Mentor | Space tourism website</title>
 </head>
 
 <body>
   <div id="background">
 
-    <nav>
+    <nav id="nav">
       <img src="./assets/shared/logo.svg" alt="logo">
       <hr>
-      <ul>
+      <ul id="item">
         <li><a href="./index.html"><b>00</b> HOME</a></li>
         <li><a class="navActive" href=""><b>01</b> DESTINATION</a></li>
         <li><a href="./crew-engineer.html"><b>02</b> CREW</a></li>
         <li><a href="./technology-spaceport.html"><b>03</b> TECHNOLOGY</a></li>
       </ul>
+      <ul>
+        <li class="toggle">
+          <a href="#" onclick="changeIcon()"><i id="tg" class="fas fa-bars "></i></a>
+        </li>
+      </ul>
     </nav>
-    <!-- ------------------------------------------------------------------------------------------------------------------------------------------------ -->
+    <!---------------------------------------------------------------------------------------------------------------------------------------------------->
     <section class="destination">
-      <div>  
+      <div>
         <h2>01</h2>
         <h2> Pick your destination</h2>
       </div>
       <div class="destContainer">
         <section class="destLeft">
           <div id="planetImg"></div>
-          
+
         </section>
         <section class="destRight">
           <ul>
@@ -45,25 +50,21 @@
           <p>Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons,
             the tallest planetary mountain in our solar system. It’s two and a half times
             the size of Everest!</p>
-            <div id="distanceContainer">
-              <div>
-                <h4>Avg. distance</h4>
-                <h2>225 mil. km</h2>
-              </div>
-              <div>
-                <h4>Est. travel time</h4>
-                <h2>9 months</h2>
-              </div>
+          <div id="distanceContainer">
+            <div>
+              <h4>Avg. distance</h4>
+              <h2>225 mil. km</h2>
             </div>
-          </section>
-        </div>
-      </section>
-    </div>
-    </body>
-    
-    </html>
-    <!-- ------------------------------------------------------------------------------------------------------------------------------------------------ -->
-    <!-- 00 Home
-      01 Destination
-      02 Crew
-      03 Technology
+            <div>
+              <h4>Est. travel time</h4>
+              <h2>9 months</h2>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+  </div>
+</body>
+<script src="js/main.js"></script>
+</html>
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------------ -->
