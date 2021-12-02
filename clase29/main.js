@@ -91,7 +91,12 @@ function editarBorrar(state, action) {
 
 function component() {
   document.getElementById("respuesta").innerHTML = JSON.stringify(
-    store.getState()
+    store.getState().usuarios[0]
+  );
+}
+function productos() {
+  document.getElementById("productos").innerHTML = JSON.stringify(
+    store.getState().productos
   );
 }
 function total() {
@@ -100,6 +105,7 @@ function total() {
 
 //se registra el elemento/component/dom de escucha
 store.subscribe(component);
+store.subscribe(productos);
 store.subscribe(total);
 
 //se emite la accion
