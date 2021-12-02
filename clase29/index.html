@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/redux@latest/dist/redux.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <div>
+        <p>
+            Contador: <span id="respuesta">0</span> 👨‍💻
+            <button id="sumar">+</button>
+            <button id="restar">-</button>
+        </p>
+    </div> -->
+
+    <div>
+      Usuario: <span id="respuesta"></span> <br /><br /><br />
+      <div>
+        <div>
+          <input type="text" name="correo" id="correo" placeholder="correo" />
+        </div>
+        <div>
+          <input type="text" name="nombre" id="nombre" placeholder="nombre" />
+        </div>
+        <div>
+          <input type="text" name="pais" id="pais" placeholder="pais" />
+        </div>
+        <br /><br />
+        <div>
+          <button id="crear"><h3>Crear perfil</h3></button>
+          <button id="editar"><h3>Editar Perfil</h3></button>
+          <button id="borrar"><h3>Borrar Perfil</h3></button>
+        </div>
+      </div>
+      <div>
+        <h1>Cargar producto:</h1>
+        <div>
+          <input
+            type="text"
+            name="nombreProducto"
+            id="nombreProducto"
+            placeholder="Nombre producto"
+          />
+        </div>
+        <div>
+          <input type="text" name="precio" id="precio" placeholder="precio" />
+        </div>
+        <div>
+          <input type="text" name="id" id="id" placeholder="id" />
+        </div>
+        <br /><br />
+        <div>
+          <button id="crearProducto"><h3>Cargar producto</h3></button>
+          <button id="eliminarProducto"><h3>Eliminar producto</h3></button>
+          <h1 style="display: inline;">Total:</h1>
+          <h2 style="display: inline;" id="total">0</h2>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
