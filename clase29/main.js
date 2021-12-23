@@ -1,7 +1,7 @@
 const initialState = {
-  usuarios: [{}],
-  productos: [{}],
-  precioTotal:0
+  usuarios: [{ correo, nombre, pais }],
+  productos: [],
+  precioTotal: 0,
 };
 
 //defino el funcionamiento del store
@@ -15,9 +15,9 @@ function reducer(state = initialState, action) {
     case "ELIMINAR_CORREO":
       return editarBorrar(state, action);
     case "CREAR_PRODUCTO":
-        return crearProducto(state,action);
+      return crearProducto(state, action);
     case "ELIMINAR_PRODUCTO":
-      return eliminarProducto(state,action);
+      return eliminarProducto(state, action);
     default:
       return state;
   }
@@ -26,28 +26,29 @@ function reducer(state = initialState, action) {
 //creo el store
 let store = Redux.createStore(reducer);
 
-function crearProducto(state,action){
+function crearProducto(state, action) {
   let sum = Number(state.precioTotal);
   let { nombre, precio, id } = action.payload;
+  let pre = Number(precio);
   return {
     ...state,
-    productos: [...state.productos,{ nombre, precio, id }],
-    precioTotal:(sum+Number(precio))
+    productos: [...state.productos, { nombre, precio, id }],
+    precioTotal: sum + pre,
   };
-  
 }
 
-function eliminarProducto(state,action){
-  console.log("ID:"+action.payload.id);
+function eliminarProducto(state, action) {
+  console.log("ID:" + action.payload.id);
   let val = Number(state.precioTotal);
-  return{
+  let pre = Number(action.payload.precio);
+  return {
     ...state,
-    productos:[...state.productos.filter((element)=>element.id!=action.payload.id)],
-    precioTotal:(val-action.payload.precio)
-  }
+    productos: [
+      ...state.productos.filter((element) => element.id != action.payload.id),
+    ],
+    precioTotal: val - pre,
+  };
 }
-
-
 
 function crearPerfil(state, action) {
   let { nombre, correo, pais } = action.payload;
@@ -94,11 +95,37 @@ function component() {
     store.getState().usuarios[0]
   );
 }
+const plist = [
+  {
+    nombre: "Televisor",
+    precio: 200,
+    id: 30,
+  },
+  {
+    nombre: "pc",
+    precio: 200,
+    id: 30,
+  },
+  {
+    nombre: "Televisor",
+    precio: 200,
+    id: 30,
+  },
+];
+
+
+  console.log(NombreProducto,nombre,id);
+/*   store.dispatch(accionCrearProducto(NombreProducto,precio,id)); */
+var listp = plist.map((item, i) => {
+  return `<div key=${i}>${JSON.stringify(item)}</div>
+   <button onClick="hola(${item.nombre},${item.precio},${item.id})">Agregar</button>`;
+});
 function productos() {
   document.getElementById("productos").innerHTML = JSON.stringify(
     store.getState().productos
   );
 }
+document.getElementById("list").innerHTML = listp;
 function total() {
   document.getElementById("total").innerHTML = store.getState().precioTotal;
 }
@@ -121,9 +148,9 @@ document.getElementById("borrar").addEventListener("click", () => {
   store.dispatch(accionBorrarPerfil());
 });
 
-document.getElementById("crearProducto").addEventListener("click", () => {
+/* document.getElementById("add").addEventListener("click", () => {
   store.dispatch(accionCrearProducto());
-});
+}); */
 document.getElementById("eliminarProducto").addEventListener("click", () => {
   store.dispatch(accionEliminarProducto());
 });
@@ -134,16 +161,17 @@ let elPais = document.getElementById("pais");
 let NombreProducto = document.getElementById("nombreProducto");
 let Precio = document.getElementById("precio");
 let idProducto = document.getElementById("id");
+let cantidadProducto = document.getElementById("cantidad");
 /* let total = document.getElementById("total"); */
 
 //acciones
-function accionCrearProducto() {
+function accionCrearProducto(NombreProducto,precio,cantidadProducto,id) {
   return {
     type: "CREAR_PRODUCTO",
     payload: {
-      nombre: NombreProducto.value,
-      precio: precio.value,
-      id: id.value
+      nombre: NombreProducto,
+      precio: precio,
+      id: id,
     },
   };
 }
@@ -151,8 +179,8 @@ function accionEliminarProducto() {
   return {
     type: "ELIMINAR_PRODUCTO",
     payload: {
-      precio: precio.value,
-      id: id.value
+      precio: cantidadProducto.value * precio.value,
+      id: id.value,
     },
   };
 }
@@ -188,4 +216,3 @@ function accionBorrarPerfil() {
     },
   };
 }
-
